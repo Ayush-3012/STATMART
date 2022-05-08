@@ -1,0 +1,234 @@
+#body{
+    background:#A1A9FE;
+    height:700px;
+    overflow:hidden;
+    font-family:'Comic Sans MS', 'Century Gothic', 'MV Boli';
+}
+
+
+
+/*BACK DIV*/
+.back-div{
+    height:550px;
+    width:550px;
+    border-radius:30px;
+    background:linear-gradient(#984aff,#5a6eee);
+    transform:rotate(-20deg);
+    position:relative;
+    left:400px;
+    top:60px;
+    box-shadow:0 8px 10px black;
+}
+
+
+/*INNER BOXES*/
+.inner-box{
+    height:400px;
+    width:400px;
+    background:linear-gradient(#ebb4ff,#59006b);
+    border-radius:20px;
+    box-shadow:0 4px 8px black;
+}
+
+
+
+/*WELCOME DIV*/
+#welcome-div{
+    position:relative;
+    bottom:410px;
+    left:480px;
+    display:block;
+}
+
+#welcome_msg{
+    text-align:center;
+    font-size:30px;
+    font-weight:550;
+}
+
+#STAT{
+    animation-name:color-change;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    font-size:50px;
+    font-weight:1000;
+    font-family:'Lucida Handwriting';
+}
+@keyframes color-change{
+    10%{
+        color:#8f0047;
+    }
+    30%{
+        color:#910094;
+    }
+    60%{
+        color:#410064;
+    }
+    95%{
+        color:hsl(278, 100%, 10%);
+    }
+}
+
+.action_button{
+    height:50px;
+    width:250px;
+    text-align:center;
+    font-size:20px;
+    font-weight:800;
+    border:1px solid rgb(253, 143, 229);
+    background:linear-gradient(to right,rgb(255, 255, 255),rgba(255, 0, 128, 0.774));
+    border-radius:20px;
+    color:rgb(0, 0, 0);
+    cursor:pointer;
+    
+}
+.action_button:hover{
+    background:linear-gradient(rgb(255, 0, 140),rgb(172, 0, 66),rgba(70, 0, 70, 0.774));
+    color:white;
+}
+
+
+.action_button label{
+    position:relative;
+    top:10px;
+    cursor:pointer;
+}
+
+#signup1{
+    position:relative;
+    top:90px;
+    left:80px;
+}
+
+#login1{
+    position:relative;
+    top:50px;
+    left:80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LOGIN DIV*/
+#login-div{
+    position:relative;
+    bottom:420px;
+    left:480px;
+    text-align:center;
+    display:none;
+}
+
+.back{
+    height:50px;
+    width:40px;
+    font-size:32px;
+    cursor:pointer;
+    background:rgba(255, 0, 119, 0);
+}
+#login-back{
+    position:relative;
+    top:25px;
+}
+
+#login-div h2{
+    font-weight:900;
+    position:relative;
+    bottom:20px;
+    left:20px;
+}
+
+.submit_button{
+    height:50px;
+    width:150px;
+    font-size:20px;
+    border-radius:20px;
+    background:linear-gradient(rgb(255, 147, 223),rgb(51, 17, 66));
+    color:white;
+    border:0px;
+}
+.submit_button:hover{
+    background:linear-gradient(to right,rgb(255, 76, 201),rgb(51, 17, 66));
+    border:1px dotted pink;
+}
+
+#login-div button{
+    position:relative;
+    top:90px;
+}
+
+.form-input{
+    background-color:rgb(173, 201, 255);
+    border-radius:20px;
+    border:0px;
+}
+
+
+#login-form label{
+    font-size:20px;
+}
+
+#password-div{
+    position:relative;
+    top:30px;
+}
+#email-div{
+    position:relative;
+}
+
+
+
+
+
+/*SIGN UP DIV*/
+#signup-div{
+    position:relative;
+    bottom:470px;
+    left:490px;
+    height:500px;
+    text-align:center;
+    display:none;
+}
+#signup-back{
+    position:relative;
+    top:32px;
+}
+
+#signup-div h2{
+    font-weight:900;
+    position:relative;
+    bottom:13px;
+    left:20px;
+}
+
+#signup-form label{
+    font-size:20px;
+}
+
+#signup_button{
+    position:relative;
+    top:130px;
+}
+
+#password-div-2{
+    position:relative;
+    top:70px;
+}
+#username-div-2{
+    position:relative;
+    top:40px;
+}
+#email-div-2{
+    position:relative;
+    top:10px;
+}
+
+

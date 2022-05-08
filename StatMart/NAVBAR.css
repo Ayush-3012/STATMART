@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Gloria+Hallelujah&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Patrick+Hand&family=Shadows+Into+Light&family=Shippori+Antique+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Gloria+Hallelujah&family=Indie+Flower&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Patrick+Hand&family=Shadows+Into+Light&family=Shippori+Antique+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Gloria+Hallelujah&family=Indie+Flower&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Patrick+Hand&family=Shadows+Into+Light&family=Shippori+Antique+B1&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Gloria+Hallelujah&family=Indie+Flower&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Pacifico&family=Patrick+Hand&family=Shadows+Into+Light&family=Shippori+Antique+B1&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Gloria+Hallelujah&family=Indie+Flower&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Pacifico&family=Patrick+Hand&family=Shadows+Into+Light&family=Shippori+Antique+B1&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Gloria+Hallelujah&family=Indie+Flower&family=Merienda+One&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Pacifico&family=Patrick+Hand&family=Shadows+Into+Light&family=Shippori+Antique+B1&family=Yellowtail&display=swap');
+#body{
+    background:#A1A9FE;
+    font-family:'Comic Sans MS', 'Lucida Handwriting', 'MV Boli';
+    margin:0;
+    padding:0;
+}
+
+#body::-webkit-scrollbar {
+    width:0.6em;  
+}
+#body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+} 
+#body::-webkit-scrollbar-thumb {
+    background-color: #715C8C;
+    outline: 1px solid rgb(0, 0, 0);
+    height:40px;
+    width:10px;
+    border-radius:100px;
+}
+
+
+/*FULL NAV*/
+#home-nav{
+    background:linear-gradient(#73436de3,#341948);
+}
+
+/*UPPER NAV*/
+#top-nav{
+    position:relative;
+    bottom:10px;
+    height:140px;
+    width:100%;
+    box-shadow:0 4px 20px rgb(0, 0, 0);
+}
+#top-nav a{
+    text-decoration:none;
+}
+#top-nav h1{
+    font-size:100px;
+    text-align:center;
+    font-weight:800;
+    animation-name:color-change;
+    animation-duration:8s;
+    animation-iteration-count:infinite;
+    text-shadow:5px 15px 10px  rgb(0, 0, 0);
+    -webkit-text-stroke: 0.4px rgb(0, 0, 0);
+    font-family: 'Merienda One', cursive;
+    position:relative;
+    top:10px;
+    color:rgb(207, 49, 123);
+}
+@keyframes color-change{
+    10%{
+        color:#df63a1;
+    }
+    30%{
+        color:#cd4bcf;
+    }
+    60%{
+        color:#9e43c2;
+    }
+    95%{
+        color:#b93181;
+    }
+
+}
+
+.third-navbar{
+    width:100%;
+    height:60px;
+    background:linear-gradient(rgb(255, 141, 246),rgb(39, 0, 20));
+    
+}
+.nav-items2{
+    width:200px;
+    font-size:30px; 
+    height:60px;
+    cursor:pointer;
+}
+.nav-items2 i{
+    position:relative;
+    bottom:10px;
+    color:rgb(255, 27, 179);
+    font-weight:800;
+    text-shadow:10px 5px 4px black;
+    
+}
+.nav-items2 label{
+    font-family:'Comic Sans MS';
+    position:relative;
+    bottom:10px;
+    color:white;
+    font-weight:800;
+    text-shadow:5px 5px 4px black;   
+    cursor:pointer;
+}
+.nav-items2 label:hover{
+    color:rgb(227, 117, 255);
+    font-size:32px;
+    text-shadow:5px 7px 2px black;
+}
+#cart{
+    margin-left:5%;
+}
+#sell{
+    width:460px;
+    position:relative;
+    left:250px;
+    bottom:60px;
+}
+#pur_sell{
+    width:490px;
+    position:relative;
+    left:700px;
+    bottom:120px;
+}
+
+
+/*BOTTOM NAV*/
+#bot-nav{
+    height:100px;
+    width:100%;
+    box-shadow:0 4px 10px rgb(0, 0, 0);
+}
+
+.nav-items{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    font-weight:700;
+    text-shadow:4px 5px 4px black;
+}
+.nav-items:hover{
+    color:#c00090;
+    text-decoration:underline;
+    position:relative;
+    bottom:6px;
+    font-size:21px;
+}
+
+#bot-nav-upper{
+    margin:0px;
+    text-align:center;
+    position:relative;
+    top:10px;
+}
+#PAPERS{
+    position:relative;
+    left:100px;
+}
+#TAPES{
+    position:relative;
+    left:60px;
+}
+#REFILLS{
+    position:relative;
+    left:20px;
+}
+#ART_CRAFTS{
+    position:relative;
+    right:190px;
+}
+#MARKERS{
+    position:relative;
+    right:150px;
+}
+#PENS{
+    position:relative;
+    right:100px;
+}
+#PENCILS{
+    position:relative;
+    right:60px;
+}
+#INK{
+    position:relative;
+    right:20px;
+}
+
+
+#bot-nav-lower{
+    position:relative;
+    text-align:center;
+    top:10px;
+}
+#DESK_ESS{
+    position:relative;
+    left:140px;
+}
+#NOTEBOOKS{
+    position:relative;
+    left:90px;
+}
+#OFFICE_ITEMS{
+    position:relative;
+    right:140px;
+}
+#CLIPS{
+    position:relative;
+    right:90px;
+}
+#SCHOOL_BAGS{
+    position:relative;
+    right:240px;
+}
+#COLOURS{
+    position:relative;
+    left:160px;
+}
+#FOLDERS{
+    position:relative;
+    left:200px;
+}
+
+
+
+
+
+/*FOOTER*/
+.lower-div{
+    height:200px;
+    width:100%;
+    position:relative;
+    background:linear-gradient(to right,#000000,#a94dff);
+    border-radius:15px;
+    box-shadow:0 -10px -10px 10px black;
+}
+.lower-div:hover{
+    background:linear-gradient(to left,#222222,#8400ff);
+}
+.lower-div h1{
+    text-align:center;
+    font-weight:900;
+    color:#ffffff;
+    text-shadow:0 4px rgb(0, 0, 0);
+}
+
+.contacts{
+    position:relative;
+    top:30px;
+    width:100%;
+}
+
+.contacts label{
+    font-size:24px;
+    font-weight:800;
+    color:#ffffff;
+    cursor:pointer;
+    text-shadow:0 4px rgb(0, 0, 0);
+}
+
+.contact_logo{
+    height:100px;
+}
+
+.contact_logo:hover{
+    animation-name:zoom;
+    animation-duration:100s;
+    animation-iteration-count:infinite;
+    position:relative;
+}
+
+
+
+.fa {
+    padding: 15px 10px;
+    font-size: 35px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-envelope{
+    background: #0051ff;
+    color: white;
+}
+
+.fa-phone{
+    background: #000000;
+    color: white;
+}
+  
+#call{
+    position:relative;
+    left:370px;
+}
+#mail{
+    position:relative;
+    left:280px;
+}
+#linked-in{
+    position:relative;
+    left:210px;
+}
+#twitter{
+    position:relative;
+    left:140px;
+}
+#face-book{
+    position:relative;
+    left:70px;
+}

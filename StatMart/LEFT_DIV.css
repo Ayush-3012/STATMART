@@ -1,0 +1,50 @@
+.left-div{
+    height:650px;
+    width:280px;
+    background:linear-gradient(#D7D4DD,#838BC2);
+    box-shadow:10px 8px 10px black;
+    border-radius:20px;
+    text-align:center;
+}
+
+.sticky{
+    position:fixed;
+    top:0;
+}
+.opaque{
+    opacity:0;
+}
+
+.left-div-sub{
+    height:600px;
+    position:relative;
+    top:30px;
+    overflow:auto;
+}
+.left-div-sub::-webkit-scrollbar {
+    width: 0.6em;  
+}
+.left-div-sub::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+} 
+.left-div-sub::-webkit-scrollbar-thumb {
+    background-color: #715C8C;
+    outline: 1px solid rgb(0, 0, 0);
+    height:40px;
+    width:10px;
+    border-radius:100px;
+}
+
+
+.left-div-items{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    padding:0px 10px;
+    font-weight:700;
+    text-shadow:2px 4px 6px  rgb(255, 255, 255);
+}
+.left-div-items:hover{
+    color:rgb(0, 3, 187);
+    text-decoration:underline;
+}

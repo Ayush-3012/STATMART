@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <title>STATMART: ART & CRAFTS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="NAVBAR.css">
+        <link rel="stylesheet" href="LEFT_DIV.css">
+        <link rel="stylesheet" href="RIGHT_DIV.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<style>
+           
+/*ACRYLIC COLOURS*/
+#ACRYLIC-ITEM{
+    border:1px solid;
+}
+
+.ITEM-INFO{
+    height:650px;
+}
+
+.ITEM1{
+    position:relative;
+    left:50px;
+}
+
+.ITEM2{
+    position:relative;
+    left:380px;
+    bottom:490px;
+}
+
+.ITEM3{
+    position:relative;
+    left:700px;
+    bottom:980px;
+}
+
+
+
+/* DIV NAME */
+#BRUSHES_ITEM{
+    position:relative;
+    top:40px;
+}
+
+#COL_PENCIL-ITEMS{
+    position:relative;
+    top:80px;
+}
+
+#FABRIC_PAINTS_ITEMS{
+    position:relative;
+    top:120px;
+}
+
+#OIL_COLOURS_ITEMS{
+    position:relative;
+    top:160px;
+}
+#OIL_PASTELS_ITEMS{
+    position:relative;
+    top:200px;
+}
+#PLASTIC_CRAYONS_ITEMS{
+    position:relative;
+    top:240px;
+}
+#SKETCH_PENS_ITEMS{
+    position:relative;
+    top:280px;
+}
+
+
+#lower-div-id{
+    position:relative;
+    top:400px;
+}
+.left-div{
+    text-align:center;
+}
+.addToCart:hover{
+    background-color:white;
+    color:black;
+    border:1px dotted black;
+    transition:ease-in 0.6s;
+}
+#ART_CRAFTS{
+    color:#c00090;
+    text-decoration:underline;
+    position:relative;
+    bottom:6px;
+    font-size:21px;
+}
+</style>
+    
+
+</head>
+
+
+<body id="body">
+    
+     <div class="navbar" id="home-nav">
+            <nav id="top-nav">
+                <a href="HomePage.html">
+                    <h1><i>S t A t M A R t</i></h1>
+                </a>
+            </nav>
+         
+         <nav id="bot-nav">
+             <div id="bot-nav-upper">
+                 <a href="Art_Crafts.html" class="nav-items" id="ART_CRAFTS">ART & CRAFTS</a>
+                 <a href="Markers.html" class="nav-items" id="MARKERS">MARKERS</a>
+                 <a href="Pens.html" class="nav-items" id="PENS">PENS</a>
+                 <a href="Pencils.html" class="nav-items" id="PENCILS">PENCILS</a>
+                 <a href="Ink.html" class="nav-items" id="INK">INK</a>
+                 <a href="Refills.html" class="nav-items" id="REFILLS">REFILLS</a>
+                 <a href="Tapes.html" class="nav-items" id="TAPES">TAPES</a>
+                 <a href="Papers.html" class="nav-items" id="PAPERS">PAPERS</a>
+             </div>
+             <br>
+             <div id="bot-nav-lower">
+                 <a href="Office_Items.html" class="nav-items" id="OFFICE_ITEMS">OFFICE ITEMS</a>
+                 <a href="Clips.html" class="nav-items" id="CLIPS">CLIPS</a>
+                 <a href="Colours.html" class="nav-items" id="COLOURS">COLOURS</a>
+                 <a href="Folders.html" class="nav-items" id="FOLDERS">FOLDERS</a>
+                 <a href="School_Bags.html" class="nav-items" id="SCHOOL_BAGS">SCHOOL BAGS</a>
+                 <a href="Notebook.html" class="nav-items" id="NOTEBOOKS">NOTEBOOKS</a>
+                 <a href="Desk_Essentials.html" class="nav-items" id="DESK_ESS">DESK ESSENTIALS</a>
+             </div>
+         </nav>
+    </div>      <!--NAVBAR-->
+
+<div class='third-navbar'>
+       <div class='nav-items2' id='cart' onclick="window.open('CART.php','_self');">
+           <i class="fa fa-shopping-cart"></i>
+           <label>CART</label>
+       </div>
+
+       <div class='nav-items2' id='sell' onclick="window.open('SELLER ITEMS/SELLERS.html','_self');">
+            <i class="fa fa-check"></i>
+            <label>SELL YOUR PRODUCTS</label>
+        </div>
+
+        <div class='nav-items2' id='pur_sell' onclick="window.open('SELLER ITEMS/SELLER_PRODUCT2.php','_self');">
+            <i class="fa fa-credit-card"></i>
+            <label>PURCHASE FROM SELLER</label>
+        </div>
+</div>
+
+
+<div class="lower-body">
+    <div class="left-div" id="left-div-id">
+
+        <div class="left-div-sub">
+            <a href="#ACRYLIC-ITEM" class="left-div-items" id="ACRYLIC">ACRYLIC COLOURS</a><br><hr>
+            <a href="#BRUSHES_ITEM" class="left-div-items" id="BRUSHES">BRUSHES</a><br><hr>
+            <a href="#COL_PENCIL-ITEMS" class="left-div-items" id="COLOUR_PENCIL">COLOUR PENCIL</a><br><hr>
+            <a href="#FABRIC_PAINTS_ITEMS" class="left-div-items" id="FABRIC_PAINTS">FABRIC PAINTS</a><br><hr>
+            <a href="#OIL_COLOURS_ITEMS" class="left-div-items" id="OIL_COLOURS">OIL COLOURS</a><br><hr>
+            <a href="#OIL_PASTELS_ITEMS" class="left-div-items" id="OIL_PASTELS">OIL PASTELS</a><br><hr>
+            <a href="#PLASTIC_CRAYONS_ITEMS" class="left-div-items" id="PLASTIC_CRAYONS">PLASTIC CRAYONS</a><br><hr>
+            <a href="#SKETCH_PENS_ITEMS" class="left-div-items" id="SKETCH_PENS">SKETCH PENS</a><br><hr>
+        </div>
+    </div>  <!--LEFT DIV-->
+
+
+    
+    <div class="right-div" id="right-div-id">
+        
+                <!--DIV 1-->
+                <div class="ITEM-INFO" id="ACRYLIC-ITEM">
+                    <div class="item-heading">
+                        <h1>ACRYLIC COLOURS</h1>
+                    </div>
+
+
+                 <!--ITEM 1-->
+                <div  class="item-details ITEM1" id="AC_CAMLIN_120"> 
+                    <a href="#">  
+                    <div class="item-image">
+                        <img src="https://i2.wp.com/www.statmo.in/wp-content/uploads/2021/06/Camlin-Artist-Acrylic-Colours-120Ml-Tu.jpg?resize=247%2C296&ssl=1">                       
+                    </div>
+
+                    <div class="item-name">
+                        <label>ACRYLIC COLOURS</label><br>
+                        <a href=#>
+                            Camlin Artist Acrylic Colours 120Ml Tube
+                        </a>
+                    </div>
+
+                    <div class="item-price">
+                        <label>₹220</label>
+                    </div>
+
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                         <button name='button' value='AC_div1_item1' type='submit' class="addToCart">ADD TO CART</button>
+                    </form>
+                </a>
+                </div>  <!--item-details-->
+           
+
+
+                  <!--ITEM 2-->
+                <div  class="item-details ITEM2" id="AC_PIDI_ALL"> 
+                    <a href="#"> 
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2020/12/Pidilite-Fevicryl-All-In-One-Canvas-Painting-Kit.jpg?resize=247%2C296&ssl=1">  
+                    </div>
+                    <div class="item-name">
+                        <label>ACRYLIC COLOURS</label><br>
+                        <a href=#>
+                            Pidilite Fevicryl All In One Canvas Painting Kit
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹199</label>
+                    </div>
+                     <form method='post' action='CHECKOUT.php' name='form1'>
+                          <button name='button' value='AC_div1_item2' type='submit' class="addToCart">ADD TO CART</button>
+                    </form>
+                </a>   
+                </div>  <!--item-details-->
+                         
+            
+            
+                <!--ITEM 3-->
+                <div  class="item-details ITEM3" id="AC_PIDI_PK"> 
+                    <a href="#">
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2020/09/Pidilite-Fevicryl-Acrylic-Pouring-K.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>ACRYLIC COLOURS</label><br>
+                        <a href=#>
+                            Pidilite Fevicryl Acrylic Pouring Kit
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹275</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div1_item3' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>       
+                </div>  <!--item-details-->
+
+        </div>      <!--ACRYLIC ITEM-->
+    
+
+
+
+        <!--DIV 2-->
+        <div class="ITEM-INFO" id="BRUSHES_ITEM">
+            <div class="item-heading">
+                <h1>BRUSHES</h1>
+            </div>
+                 <!--ITEM 1-->
+                <div  class="item-details ITEM1" id=""> 
+                    <a href="#">  
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2017/01/Faber-Castell-4-Tri-Grip-Brushes.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>FLAT BRUSH</label><br>
+                        <a href=#>
+                            Faber Castell 4 Tri Grip Brushes Flat Synthetic Hair
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹80</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div2_item1' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>
+                </div>  <!--item-details-->
+           
+                  <!--ITEM 2-->
+                <div  class="item-details ITEM2" id=""> 
+                    <a href="#"> 
+                    <div class="item-image">
+                        <img src="https://i2.wp.com/www.statmo.in/wp-content/uploads/2017/01/Faber-Castell-7-Paint-Brushes-Pony-Hair.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>ROUND BRUSH</label><br>
+                        <a href=#>
+                            Faber Castell 13 Tri Grip Brushes Round
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹270</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div2_item2' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>   
+                </div>  <!--item-details-->
+                         
+            
+            
+                <!--ITEM 3-->
+                <div  class="item-details ITEM3" id=""> 
+                    <a href="#">
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2017/01/Faber-Castell-7-Paint-Brushes-Synthetic-Hair-Round-Brush.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>ROUND BRUSH</label><br>
+                        <a href=#>
+                            Faber Castell 7 Paint Brushes Synthetic Hair Round Brush
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹225</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div2_item3' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>       
+                </div>  <!--item-details-->
+
+         </div>     <!--BRUSHES-ITEM-->       
+
+
+
+
+         <!--DIV 3-->
+         <div class="ITEM-INFO" id="COL_PENCIL-ITEMS">
+            <div class="item-heading">
+                <h1>COLOUR PENCILS</h1>
+            </div>
+                 <!--ITEM 1-->
+                <div  class="item-details ITEM1" id=""> 
+                    <a href="#">  
+                    <div class="item-image">
+                        <img src="https://i0.wp.com/www.statmo.in/wp-content/uploads/2020/06/Faber-Castell-Colour-Pencils-48-Shades-by-StatM.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>COLOUR PENCIL</label><br>
+                        <a href=#>
+                            Faber Castell Colour Pencils 48 Shades
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹432</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div3_item1' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>
+                </div>  <!--item-details-->
+           
+                  <!--ITEM 2-->
+                <div  class="item-details ITEM2" id=""> 
+                    <a href="#"> 
+                    <div class="item-image">
+                        <img src="https://i2.wp.com/www.statmo.in/wp-content/uploads/2017/08/Doms-Supersoft-Colour-Pencil-24-Shades-Round-Tin-Pack-by-StatMo.in_.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>COLOUR PENCIL</label><br>
+                        <a href=#>
+                            Doms Supersoft Colour Pencil 24 Shades Round Tin Pack
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹135</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div3_item2' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>   
+                </div>  <!--item-details-->
+                         
+            
+            
+                <!--ITEM 3-->
+                <div  class="item-details ITEM3" id=""> 
+                    <a href="#">
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2017/08/sd.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>COLOUR PENCIL</label><br>
+                        <a href=#>
+                            Doms Supersoft Colour Pencil 24 Shades Round Tin Pack
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹135</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div3_item3' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>       
+                </div>  <!--item-details-->
+         </div>     <!--COLOUR PENCIL-ITEM-->       
+
+    
+
+
+
+         <!--DIV 4-->
+         <div class="ITEM-INFO" id="FABRIC_PAINTS_ITEMS">
+            <div class="item-heading">
+                <h1>FABRIC PAINTS</h1>
+            </div>
+                 <!--ITEM 1-->
+                <div  class="item-details ITEM1" id=""> 
+                    <a href="#">  
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2021/07/Faber-Castell-Fabric-Paints-with-Mask-Painting-10-Shades.jpg?resize=510%2C516&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>FABRIC PAINTS</label><br>
+                        <a href=#>
+                            Faber Castell Fabric Paints with Mask Painting 10 Shades
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹310</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php'  name='form1'>
+                        <button name='button' value='AC_div4_item1' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>
+                </div>  <!--item-details-->
+           
+                  <!--ITEM 2-->
+                <div  class="item-details ITEM2" id=""> 
+                    <a href="#"> 
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2017/01/Faber-Castell-Fabric-Colours-12-Shades.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>FABRIC PAINTS</label><br>
+                        <a href=#>
+                            Faber Castell Fabric Colours 12 Shades
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹160</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div4_item2' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>   
+                </div>  <!--item-details-->
+                         
+            
+            
+                <!--ITEM 3-->
+                <div  class="item-details ITEM3" id=""> 
+                    <a href="#">
+                    <div class="item-image">
+                        <img src="https://i2.wp.com/www.statmo.in/wp-content/uploads/2017/01/Faber-Castell-Fabric-Colours-6-Shades.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>FABRIC PAINTS</label><br>
+                        <a href=#>
+                            Faber Castell Fabric Colours 6 Shades
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹100</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div4_item3' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>       
+                </div>  <!--item-details-->
+         </div>     <!--COLOUR PENCIL-->       
+
+
+
+         <!--DIV 5-->
+        <div class="ITEM-INFO" id="OIL_COLOURS_ITEMS">
+            <div class="item-heading">
+                <h1>OIL COLOURS</h1>
+            </div>
+                 <!--ITEM 1-->
+                <div  class="item-details ITEM1" id=""> 
+                    <a href="#">  
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2021/07/Faber-Castell-Creative-Studio-Oil-Colour-12-Shades-9Ml-Tube-by-StatM.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>OIL COLOURS</label><br>
+                        <a href=#>
+                            Faber Castell Creative Studio Oil Colour 12 Shades 9Ml Tube
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹390</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div5_item1' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>
+                </div>  <!--item-details-->
+            
+                  <!--ITEM 2-->
+                <div  class="item-details ITEM2" id=""> 
+                    <a href="#"> 
+                    <div class="item-image">
+                        <img src="https://i2.wp.com/www.statmo.in/wp-content/uploads/2021/07/Faber-Castell-Creative-Studio-Oil-Colour-12-Shades-20Ml-Tube.jpg?resize=510%2C516&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>OIL COLOURS</label><br>
+                        <a href=#>
+                            Faber Castell Creative Studio Oil Colour 12 Shades 20Ml Tube
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹560</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div5_item2' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>   
+                </div>  <!--item-details-->
+
+            
+            
+                <!--ITEM 3-->
+                <div  class="item-details ITEM3" id=""> 
+                    <a href="#">
+                    <div class="item-image">
+                        <img src="https://i0.wp.com/www.statmo.in/wp-content/uploads/2021/07/Faber-Castell-Creative-Studio-Oil-Colour-24-Shades-9Ml-.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>OIL COLOURS</label><br>
+                        <a href=#>
+                            Faber Castell Creative Studio Oil Colour 24 Shades 9Ml Tube
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹700</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div5_item3' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>       
+                </div>  <!--item-details-->
+         </div>     <!--COLOUR PENCIL-->       
+
+
+
+
+          <!--DIV 6-->
+          <div class="ITEM-INFO" id="OIL_PASTELS_ITEMS">
+              <div class="item-heading">
+                  <h1>OIL PASTELS</h1>
+              </div>
+                   <!--ITEM 1-->
+                  <div  class="item-details ITEM1" id=""> 
+                      <a href="#">  
+                      <div class="item-image">
+                          <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2020/06/Cello-Colour-Up-Oil-Pastels-25-Shad.jpg?resize=247%2C296&ssl=1">
+                      </div>
+                      <div class="item-name">
+                          <label>OIL PASTELS</label><br>
+                          <a href=#>
+                            Cello Colour Up Oil Pastels 25 Shades
+                          </a>
+                      </div>
+                      <div class="item-price">
+                          <label>₹90</label>
+                      </div>
+                      <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div6_item1' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                  </a>
+                  </div>  <!--item-details-->
+              
+                    <!--ITEM 2-->
+                  <div  class="item-details ITEM2" id=""> 
+                      <a href="#"> 
+                      <div class="item-image">
+                          <img src="https://i2.wp.com/www.statmo.in/wp-content/uploads/2018/03/Doms-Jumbo-Oil-Pastel-25-Shad.jpg?resize=247%2C296&ssl=1">
+                      </div>
+                      <div class="item-name">
+                          <label>OIL PASTELS</label><br>
+                          <a href=#>
+                            Doms Jumbo Oil Pastel 25 Shades
+                          </a>
+                      </div>
+                      <div class="item-price">
+                          <label>₹160</label>
+                      </div>
+                      <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div6_item2' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                  </a>   
+                  </div>  <!--item-details-->
+              
+              
+                  <!--ITEM 3-->
+                  <div  class="item-details ITEM3" id=""> 
+                      <a href="#">
+                      <div class="item-image">
+                          <img src="https://i2.wp.com/www.statmo.in/wp-content/uploads/2017/03/triangular1-510x510.jpg?resize=247%2C296&ssl=1">
+                      </div>
+                      <div class="item-name">
+                          <label>OIL PASTELS</label><br>
+                          <a href=#>
+                            Camlin Triangular Oil Pastel 30 Shades
+                          </a>
+                      </div>
+                      <div class="item-price">
+                          <label>₹130</label>
+                      </div>
+                      <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div6_item3' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                  </a>       
+                  </div>  <!--item-details-->
+           </div>     <!--COLOUR PENCIL-->       
+
+
+
+           <!--DIV 7-->
+           <div class="ITEM-INFO" id="PLASTIC_CRAYONS_ITEMS">
+            <div class="item-heading">
+                <h1>PLASTIC CRAYONS</h1>
+            </div>
+                 <!--ITEM 1-->
+                <div  class="item-details ITEM1" id=""> 
+                    <a href="#">  
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2017/10/dfsdfds.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>PLASTIC CRAYONS</label><br>
+                        <a href=#>
+                            Doms Plastic Crayons 24 Shades Tin Pack
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹90</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div7_item1' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>
+                </div>  <!--item-details-->
+            
+                  <!--ITEM 2-->
+                <div  class="item-details ITEM2" id=""> 
+                    <a href="#"> 
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2017/03/Artline-Gripper-Plastic-Crayons-12-Sha.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>PLASTIC CRAYONS</label><br>
+                        <a href=#>
+                            Artline Gripper Plastic Crayons 12 Shades
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹60</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div7_item2' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>   
+                </div>  <!--item-details-->
+            
+            
+                <!--ITEM 3-->
+                <div  class="item-details ITEM3" id=""> 
+                    <a href="#">
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2017/01/24.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>PLASTIC CRAYONS</label><br>
+                        <a href=#>
+                            Faber Castell 24 Grip Erasable Crayons
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹130</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div7_item3' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>       
+                </div>  <!--item-details-->
+         </div>     <!--COLOUR PENCIL-->       
+
+
+
+         <!--DIV 8-->
+         <div class="ITEM-INFO" id="SKETCH_PENS_ITEMS">
+            <div class="item-heading">
+                <h1>SKECH PENS</h1>
+            </div>
+                 <!--ITEM 1-->
+                <div  class="item-details ITEM1" id=""> 
+                    <a href="#">  
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2017/01/Faber-Castell-Connector-Pens-10-Shad.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>SKECH PENS</label><br>
+                        <a href=#>
+                            Faber Castell Connector Pens 10 Shades
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹50</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div8_item1' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>
+                </div>  <!--item-details-->
+            
+                  <!--ITEM 2-->
+                <div  class="item-details ITEM2" id=""> 
+                    <a href="#"> 
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2017/01/Faber-Castell-Connector-Pens-50-Sha.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>SKECH PENS</label><br>
+                        <a href=#>
+                            Faber Castell Connector Pens 50 Shades
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹260</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div8_item2' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>   
+                </div>  <!--item-details-->
+            
+            
+                <!--ITEM 3-->
+                <div  class="item-details ITEM3" id=""> 
+                    <a href="#">
+                    <div class="item-image">
+                        <img src="https://i1.wp.com/www.statmo.in/wp-content/uploads/2017/01/Camlin-Sketch-Pens-12-Shades.jpg?resize=247%2C296&ssl=1">
+                    </div>
+                    <div class="item-name">
+                        <label>SKECH PENS</label><br>
+                        <a href=#>
+                            Camlin Sketch Pens 12 Shades
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <label>₹30</label>
+                    </div>
+                    <form method='post' action='CHECKOUT.php' name='form1'>
+                        <button name='button' value='AC_div8_item3' type='submit' class="addToCart">ADD TO CART</button>
+                   </form>
+                </a>       
+                </div>  <!--item-details-->
+         </div>     <!--COLOUR PENCIL-->       
+
+    </div>  <!--RIGHT DIV-->
+
+</div>
+
+    <div class="lower-div" id="lower-div-id">
+            <h1>CONTACT US</h1>
+
+            <div class="contacts">
+                
+                <a class="contact_logo" href="https://www.facebook.com/Yashwantsingh071/" target="_blank" id="face-book">
+                    <i class="fa fa-facebook">
+                    </i>
+                    <label>FACEBOOK</label>
+                </a>
+
+                <a class="contact_logo" href="https://twitter.com/yashdotexe_" target="_blank" id="twitter">
+                    <i class="fa fa-twitter"></i>
+                    <label>TWITTER</label>
+                </a>
+
+                <a class="contact_logo" href="https://www.linkedin.com/in/yashwant-singh-38844519a/" target="_blank" id="linked-in">
+                    <i class="fa fa-linkedin">
+                    </i>
+                    <label>LINKEDIN</label>
+                </a>
+
+                <a class="contact_logo" href="mailto:yashwantsingh071@hotmail.com" id="mail">
+                    <i class="fa fa-envelope"></i>
+                    <label>MAIL US</label>
+                </a>
+
+                <a class="contact_logo" href="tel:+91-9871517759" id="call">
+                    <i class="fa fa-phone"></i>
+                    <label>CALL US</label>
+                </a>
+            </div>
+    </div>  <!--LOWER DIV-->
+
+
+
+<script src="CATEGORY.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>

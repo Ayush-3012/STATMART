@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>STATMART</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="CS.css">
+
+<style>
+
+#body{
+    background:#A1A9FE;
+    height:750px;
+    overflow-x:hidden;
+    font-family:'Comic Sans MS', 'Century Gothic', 'MV Boli';
+}
+
+
+/*INNER BOXES*/
+.inner-box{
+    top: 40px;
+    height:900px;
+    width:700px;
+    background:repeating-linear-gradient(60deg, #ff8de3 5px, #ff00aa 40px);
+    border-radius:20px;
+    box-shadow:0 4px 8px black;
+}
+
+
+
+/*WELCOME DIV*/
+#customer-info{
+    position:relative;
+    bottom:410px;
+    left:320px;
+}
+
+#customer_info_msg{
+    text-align:center;
+    /* font-size:30px; */
+    /* font-weight:550; */
+}
+
+#CUS-INFO{
+    animation-name:color-change;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    font-size:50px;
+    font-weight:1000;
+    font-family:'Lucida Handwriting';
+    text-shadow:0 4px 5px rgb(255, 255, 255);
+}
+@keyframes color-change{
+    10%{
+        color:#8f0047;
+    }
+    30%{
+        color:#910094;
+    }
+    60%{
+        color:#410064;
+    }
+    95%{
+        color:hsl(278, 100%, 10%);
+    }
+}
+
+
+
+
+/*CUSTOMER INFO*/
+
+h2{
+    font-weight:900;
+    position:relative;
+    left:140px;
+}
+
+#full-name-div{
+    position:relative;
+    top: 20px;
+    left: 200px;
+}
+
+#email-div{
+    position:relative;
+    top: 40px;
+    left: 200px;
+}
+
+#address-div{
+    position:relative;
+    top: 60px;
+    left: 200px;
+}
+
+#city-div{
+    position:relative;
+    top: 80px;
+    left: 195px;
+}
+
+#state-div{
+    position:relative;
+    top: 100px;
+    left: 195px;
+}
+
+#zip-code-div{
+    position:relative;
+    top: 120px;
+    left: 195px;
+}
+
+#phone-div{
+    position:relative;
+    top: 140px;
+    left: 195px;
+}
+
+#payment-mode-div{
+    position:relative;
+    top: 150px;
+    left: 195px;
+}
+
+.reset_button{
+    position: relative;
+    left: 170px;
+    top: 170px;
+    height:50px;
+    width:150px;
+    font-size:20px;
+    border-radius:20px;
+    background:linear-gradient(rgb(255, 147, 223),rgb(51, 17, 66));
+    color:white;
+    border:0px;
+}
+
+.reset_button:hover{
+    background:linear-gradient(to right,rgb(255, 76, 201),rgb(51, 17, 66));
+    border:1px dotted pink;
+}
+
+.submit_button{
+    position: relative;
+    left: 190px;
+    top: 170px;
+    height:50px;
+    width:150px;
+    font-size:20px;
+    border-radius:20px;
+    background:linear-gradient(rgb(255, 147, 223),rgb(51, 17, 66));
+    color:white;
+    border:0px;
+}
+
+.submit_button:hover{
+    background:linear-gradient(to right,rgb(255, 76, 201),rgb(51, 17, 66));
+    border:1px dotted pink;
+}
+
+.form-input{
+    background-color:rgb(205, 237, 255);
+    border-radius:20px;
+    border:0px;
+}
+#item-price-div{
+    position:relative;
+    top:110px;
+    left:199px;
+}
+label{
+    font-size:20px;
+    font-weight:800;
+}
+
+</style>
+</head>
+
+
+<body id="body">
+
+    <!--CUSTOMER INFO-->
+    <div class="inner-box" id="customer-info">
+        <div id="customer_info_msg">
+            <span id="CUS-INFO">CUSTOMER DETAILS</span>
+        </div>
+
+        <h2>Enter The Shipping Address : </h2>
+
+        <form id="customer-info-form" method='post' action='Customer_Order.php'>
+
+            <div id="full-name-div">
+                <label>Full Name</label><br>
+                <input type="text" name='customer_name' class="form-input" placeholder="FULL NAME..." required><br>
+            </div>
+
+            <div id="email-div">
+                <label>Email</label><br>
+                <input type="text" name='customer_email' class="form-input" placeholder="EMAIL..." required><br>
+            </div>
+
+            <div id="address-div">
+                <label>Address</label><br>
+                <textarea name="customer_address" class="form-input" cols="30" placeholder="ADDRESS..." required></textarea><br>
+            </div>
+
+            <div id="city-div">
+                <label>City</label><br>
+                <input type="text" name='customer_city' class="form-input" placeholder="CITY..." required><br>
+            </div>
+
+            <div id="state-div">
+                <label>State/Region</label><br>
+                <input type="text" name='customer_state' class="form-input" placeholder="STATE/REGION..." required><br>
+            </div>
+
+            <div id="zip-code-div">
+                <label>Zip/Postal Code</label><br>
+                <input type="number" name='customer_zip_code' class="form-input" minlength="5" maxlength="10" placeholder="ZIP/POSTAL CODE..." required><br>
+            </div>
+
+            <div id="phone-div">
+                <label>Phone Number</label><br>
+                <input type="number" name='customer_phone' class="form-input" placeholder="PHONE NUMBER..." required><br>
+            </div>
+
+            <div id="payment-mode-div">
+                <label>Payment Method</label><br>
+                <input type="radio" name='payment_mode' class="form-input" value="Cash On Delivery" required checked> <label> Cash On Delivery </label><br>
+            </div>
+
+            <button type="reset" class="reset_button" id="reset_button_id">RESET</button>
+            <button type="submit" class="submit_button" id="submit_button_id">PLACE ORDER</button>
+    
+        </form>
+
+    </div>
+<br><br><br><br>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
